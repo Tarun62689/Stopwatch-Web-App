@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('image copy.png');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+    background-color: #222;
+    text-align: center;
+    height: 15vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 5vw;
+    color: #c94c4c;
+    margin: 0;
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    border: 4px solid #222;
+    justify-content: center;
+    margin: 4vh auto;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hours-unit,
+.mintues-unit,
+.seconds-unit,
+.mileseconds-unit {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.dots {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.button {
+    background-color: #034f84;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c94c4c;
+}
+
+#laps {
+    margin-top: 2rem;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    margin: auto;
+    display: table;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.paramaters {
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 7vw;
+    }
+
+    .container {
+        gap: 1.5rem;
+    }
+
+    .hours-unit,
+    .mintues-unit,
+    .seconds-unit,
+    .mileseconds-unit,
+    .dots {
+        font-size: 6vw;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    #laps {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 8vw;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hours-unit,
+    .mintues-unit,
+    .seconds-unit,
+    .mileseconds-unit,
+    .dots {
+        font-size: 7vw;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #laps {
+        font-size: 1rem;
+
+    }
+}
